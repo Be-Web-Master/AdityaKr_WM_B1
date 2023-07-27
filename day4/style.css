@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+    padding: 40px;
+    font-size: 25px;
+}
+body{
+    width:100%;
+    height:100%;
+}
+table th{
+    background-color: orange;
+}
+table{
+    width:255px;
+    height:155px;
+}
+table tr:nth-child(odd){
+    background-color: skyblue;
+}
+table tr:nth-child(even){
+    background-color: rgb(135, 235, 210);
+}
+table tr:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+table thead tr th,
+table tbody tr td{
+    border-bottom: 3px dashed grey;
+}
+table thead th{
+    border-top: 2px solid red;
+}
+table thead th:nth-child(1),
+table tbody td:nth-child(1)
+{
+    border-left: 2px solid red;
+} 
+table thead th:nth-child(4),
+table tbody td:nth-child(4)
+{
+    border-right: 2px solid red;
+} 
+table tr:last-child > td{
+    border-bottom: 2px solid red;
+}
