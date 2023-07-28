@@ -1,0 +1,125 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html , body{
+    width:100%;
+    height:100%;
+}
+#main{
+    position:relative;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: rgb(250, 250, 215);
+    overflow: hidden;
+}
+button{
+    padding: 12px 24px;
+    margin: 4px;
+    background-color: rgb(127, 204, 255);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+ul{ 
+    width:30%;
+    height: 255px;
+    display: flex;
+    align-items: center;
+    list-style:none ;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.right ul{ 
+    width:45%;
+    height:255px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    list-style:none ;
+    justify-content: space-around;
+    font-size: 25px;
+    /* background-color: aquamarine; */
+}
+.left ul{ 
+    width:45%;
+    height:255px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    list-style:none ;
+    justify-content: space-around;
+    font-size: 25px;
+    /* background-color: aquamarine; */
+}
+.top-btn:hover ~ .top{
+    top:0%;
+    background-color: rgba(216, 255, 167, 0.827);
+}
+.right-btn:hover ~ .right{
+    right:0%;
+    background-color: rgba(216, 255, 167, 0.827);
+}
+.bottom-btn:hover ~ .bottom{
+    bottom:0%;
+    background-color: rgba(216, 255, 167, 0.827);
+}
+.left-btn:hover ~ .left{
+    left:0%;
+    background-color: rgba(216, 255, 167, 0.827);
+}
+.top{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    top:-30%;
+    position: absolute;
+    width:100%;
+    height:30%;
+    transition: all .5s ease-out;
+    /* background-color: rgba(0, 0, 0, 0.274); */
+}
+.right{
+    right:-20%;
+    position: absolute;
+    width:20%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.274);
+    transition: all .5s ease-out;
+}
+
+
+.bottom{
+    bottom:-30%;
+    position: absolute;
+    height:30%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.274);
+    transition: all .5s ease-out;
+}
+
+.left{
+    left:-20%;
+    position: absolute;
+    height:100%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.274);
+    transition: all .5s ease-out;
+}
+
+
+
