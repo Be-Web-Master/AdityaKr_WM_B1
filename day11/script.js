@@ -109,13 +109,45 @@
 // const arr1 = arr.flat(1)
 // console.log(arr1)
 
-const arr=[1,2,3,[3,4,5,[2,3,4,5]],]
-const arr1 = arr.flatMap((elem)=>{
-    if(typeof elem == "number"){
-        return elem*2
+// const arr=[1,2,3,[3,4,5,[2,3,4,5]],]
+// const arr1 = arr.flatMap((elem)=>{
+//     if(typeof elem == "number"){
+//         return elem*2
+//     }
+//     else{
+//         return elem
+//     }
+// })  
+// console.log(arr1)
+
+
+
+const studentDetails = [
+    {name:"aditya",marks:32},
+    {name:"nitu",marks:76},
+    {name:"vibhu",marks:72},
+    {name:"siddh",marks:42},
+    {name:"rahul",marks:62},
+    {name:"manas",marks:12},
+    {name:"raj",marks:22},
+]
+let newstudentdelails = [ ]
+studentDetails.forEach((student)=>{
+    if(student.marks > 45){
+        newstudentdelails.push({
+            name:student.name,
+            marks:student.marks,
+            status:'pass',
+            passingMarks: student.marks - 45 
+        });
     }
     else{
-        return elem
+        newstudentdelails.push({
+            name:student.name,
+            marks:student.marks,
+            status:'fail',
+            failmarks: 45 - student.marks
+        });
     }
-})  
-console.log(arr1)
+})
+console.log(newstudentdelails)
