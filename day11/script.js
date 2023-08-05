@@ -121,7 +121,7 @@
 // console.log(arr1)
 
 
-
+//question solve ...........................................
 const studentDetails = [
     {name:"aditya",marks:32},
     {name:"nitu",marks:76},
