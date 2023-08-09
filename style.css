@@ -11,35 +11,35 @@ body {
 }
 .container{
     display: grid;
-    width: 855px;
-    height: 855px;
-    border: 2px solid red;
-    grid-template-columns: repeat(15,1fr);
-    grid-template-rows: repeat(15,1fr);
+    width: 1255px;
+    height: 755px;
+    border: 4px solid rgb(0, 0, 0);
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
     gap: 3px;
-    /* place-items: center; */
 }
 header{
-    grid-column-start:1;
-    grid-column-end:16 ;
-    background-color: black;
-    .box{
-      width: 45px;
-      height: 45px;
-      justify-self:center;
-      align-self:center ;
-      background-color: aqua;
-    }
+    grid-column-start: 1;
+    grid-column-end: 9;
+    background-color: rgb(255, 255, 127);
 }
-aside{
-    /* grid-row-start:2;
-    grid-row-end:16; */
-
-    /* grid-column-end:4;
-    grid-column-start:1; */
-    /* 2 type of grid which use  */
-    grid-column: 1 /span 5;
-    grid-row: 2 /span 16;
-    background-color: black;
-    color: white;
+.left{
+    grid-column:1/ span 2;
+    grid-row: 2 / span 6;
+    background-color: rgb(245, 238, 165); 
+}
+.middle{
+    grid-column:3/ span 4;
+    grid-row: 2 / span 6;
+    background-color: rgb(255, 236, 26);
+}
+.right{
+    grid-column:7/ span 2;
+    grid-row: 2 / span 6;
+    background-color: rgb(245, 238, 165); 
+}
+footer{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    background-color: rgb(255, 255, 127);
 }
