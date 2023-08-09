@@ -1,0 +1,129 @@
+/* @font-face {
+    font-family: gilroy;
+    src: url(./public/fonts/Gilroy-Regular.ttf)format("truetype");
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    color: #999;
+    background-color: rgb(245, 245, 245);
+    scroll-behavior: smooth;
+}
+
+.main{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+    ;
+    justify-content: center;
+    padding: 20px 0px;
+}
+nav {
+    width: 100%;
+    background-color: #b7f2fc;
+    color: #222;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px 12px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    padding: 0 16px;
+}
+
+nav li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+form {
+    text-align: center;
+    width: 35vw;
+    color: black;
+    height: auto;
+    background-color: rosybrown;
+    padding: 12px 12px;
+    border-radius: 15px;
+}
+.name{
+    display: flex;
+    justify-content: space-around;
+}
+.name > .input:nth-child(2){
+    margin-left: 5%;
+}
+input {
+    font-size: 18px;
+    text-align: center;
+    width:100%;
+    margin-top: 12px;
+    padding: 12px 64px;
+    border-radius: 15px;
+    border: none;
+}
+textarea{
+    margin-top: 12px;
+    width:100%;
+    border-radius: 15px;
+    border: none;
+}
+button{
+    padding: 14px 28px;
+    border-radius: 15px;
+    border: none;
+}
+.footer{
+    width: 35vw;
+    height: 145px;
+    /* background-color: black; */
+    border-radius: 15px;
+    margin-top: 1%;
+
+}
+.footer input:nth-child(2){
+   background-color: #9fa8f9;
+}
+.footer input:nth-child(1){
+    background-color: #9fa8f9;
+ }
+
+@media ( max-width:755px) {
+    .name{
+        flex-direction: column;
+        align-items: center;
+    }
+    .name > .input:nth-child(2){
+        margin-left:0%;
+    }
+}
+@media ( max-width:555px) {
+    form {
+        width: 85vw;
+    }
+    .footer input{
+        width: 85vw;
+    }
+    .bottom{
+        display: none;
+    }
+}

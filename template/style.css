@@ -1,0 +1,138 @@
+/* @font-face {
+    font-family: gilroy;
+    src: url(./public/fonts/Gilroy-Regular.ttf)format("truetype");
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+.main{
+    min-height: 100vh;
+    width: 100%;
+}
+nav {
+    width: 100%;
+    height: 90px;
+    background-color:#9695b7;
+    color: #222;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+}
+nav > .circle{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 25px 5px grey;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-right: 6vw;
+}
+
+nav li{
+    list-style: none;
+    padding: 0 16px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+nav > button{
+    padding: 24px 48px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 0px 25px 5px grey;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left-box{
+    width:35%;
+    height: calc(90vh - 90px);
+    background-color:#a7d897;
+}
+#right-box{
+    width:calc(100% - 35%);
+    height: calc(90vh - 90px);
+    background-color:#ffffff;
+    padding: 2px 18px;
+    /* background-color: #9fa49d; */
+}
+.cards{
+    width:100%;
+    height:65%;
+    display: flex;
+    align-items: center;
+    row-gap: 6px;
+    column-gap:25px;
+    flex-wrap: wrap;
+}
+.cards > .card{
+  width: 275px;
+  height: 195px;
+  background-color: #c0c6fa;
+  border-radius: 15px;
+}
+.right-footer{
+    margin-top: 2%;
+    width: calc(100% - 25px);
+    height: 95px;
+    background-color:#e1bcef;
+    border-radius: 15px;
+}
+.text{
+margin-top:1%;
+}
+.footer{
+    margin-top: 1%;
+    width:100%;
+    height:64px;
+    background-color: brown;
+}
+@media (max-width:1255px) {
+    .container{
+        flex-direction: column;
+        background-color: #222;
+        height: auto;
+    }
+    #left-box{
+        width:100%;
+        height: calc(30vh - 90px);
+        background-color:#a7d897;
+    }
+    #right-box{
+        width:100%;
+    }
+    .cards{
+        width:100vw;
+        height:55vh;
+        row-gap:12px;
+        column-gap:6px;
+    }
+}
+@media (max-width:1255px){
+    .cards{
+        height:85vh;
+    }
+}
