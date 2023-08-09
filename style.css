@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+
+}
+.container{
+    display: grid;
+    width: 1440px;
+    height:782px;
+    border: 2px solid black;
+    gap: 15px;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(14 , 1fr);
+}
+.left-corner{
+    grid-column:1/ span 4;
+    grid-row: 1/ span 6;
+    object-fit: cover;
+    background-position: center;
+    background-image: cover;
+    background-image: url("https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+/* .middle-upper{
+    grid-column:5/ span 4;
+    grid-row: 1/ span 8;
+    background-image: url("https://images.pexels.com/photos/1144687/pexels-photo-1144687.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.right-corner{
+    grid-column:9/ span 4;
+    grid-row: 1/ span 6;
+    background-color: black;
+    background-image: url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.down-left-corner{
+    grid-column:1/ span 4;
+    grid-row: 7/ span 8;
+    background-color: black;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://images.pexels.com/photos/1271620/pexels-photo-1271620.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.middle-lower{
+    grid-column:5/ span 4;
+    grid-row: 9/ span 6;
+    background-color: rgb(96, 96, 96);
+    object-fit: cover;
+    background-position: center;
+    background-image: cover;
+    background-image: url("https://images.pexels.com/photos/1005417/pexels-photo-1005417.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+.down-right-corner{
+    grid-column:9/ span 4;
+    grid-row: 7/ span 8;
+    background-color: black;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://images.pexels.com/photos/1365109/pexels-photo-1365109.jpeg?auto=compress&cs=tinysrgb&w=600");
+} */
+@media (max-width:655px) {
+    .container{
+        height: 1440px;
+        width:652px;
+        border: 2px solid black;
+        gap:5px;
+        grid-template-columns: repeat(12 , 1fr);
+        grid-template-rows: repeat(18 , 1fr);
+    }
+    .left-corner{
+        grid-column:1/ span 6;
+        grid-row: 1/ span 5;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+   .middle-upper{
+    grid-column:7/ span 6;
+    grid-row: 1/ span 6;
+    background-image: url("https://images.pexels.com/photos/1144687/pexels-photo-1144687.jpeg?auto=compress&cs=tinysrgb&w=600");
+    } 
+    .right-corner{
+        grid-column:1/ span 6;
+        grid-row: 6/ span 6;
+        background-color: black;
+        background-image: url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=600");
+    }
+    .middle-lower{
+        grid-column:7/ span 6;
+        grid-row: 7/ span 6;
+        background-color: rgb(96, 96, 96);
+        object-fit: cover;
+        background-position: center;
+        background-image: cover;
+        background-image: url("https://images.pexels.com/photos/1005417/pexels-photo-1005417.jpeg?auto=compress&cs=tinysrgb&w=600");
+    }
+    .down-left-corner{
+        grid-column:1/ span 6;
+        grid-row: 12/ span 8;
+        background-color: black;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("https://images.pexels.com/photos/1271620/pexels-photo-1271620.jpeg?auto=compress&cs=tinysrgb&w=600");
+    }
+    .down-right-corner{
+        grid-column:7/ span 6;
+        grid-row: 13/ span 6;
+        background-color: black;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("https://images.pexels.com/photos/1365109/pexels-photo-1365109.jpeg?auto=compress&cs=tinysrgb&w=600");
+    } 
+}
