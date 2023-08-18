@@ -5,31 +5,28 @@ function arrayGen(num , num1){
     }
     return outputArr
 }
-// const arr = arrayGen(1,12)
-//question1................................................
+const arr = arrayGen(1,12)
 
-//for question
+for(let i = 1; i<=arr.length; i++){
+    let sqr = i**2;
+    console.log(sqr)
+}
 
-// for(let i = 1; i<=arr.length; i++){
-//     let sqr = i**2;
-//     console.log(sqr)
-// }
 
-//foreach question
 
-// arr.forEach(num => {
-//     let sqr = num **2
-//     console.log(sqr)
-// })
+arr.forEach(num => {
+    let sqr = num **2
+    console.log(sqr)
+})
 
-//while question
 
-// let i = 1
-// while(i <= arr.length){
-//   let sqr = i **2
-//   i++
-// console.log(sqr)
-// }
+
+let i = 1
+while(i <= arr.length){
+  let sqr = i **2
+  i++
+console.log(sqr)
+}
 
 
 
