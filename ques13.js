@@ -18,6 +18,6 @@ let arr =[5,9,8,7,6,4]
 
 // console.log(max);
 
-arr.reduce((acc , value , idx , array) =>{
-  console.log(acc , value , idx , array)
-}) 
+// arr.reduce((acc , value , idx , array) =>{
+//   console.log(acc , value , idx , array)
+// }) 
