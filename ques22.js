@@ -1,4 +1,4 @@
 function charCount(str){
     let count = {};
-    let loopString = str.split
+    let loopString = str.split(",")
 }
