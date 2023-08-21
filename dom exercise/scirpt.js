@@ -87,7 +87,8 @@
 // let ele = document.querySelector(".content")
 // let elm3 = ele.matches("div")
 // console.log(elm3)
-// ................................................................
+// 
+
 // What is the nearest ancestor of the element with the class "inner-box" that has the ID "container"? (closest)
 
 // let close = document.querySelector(".inner-box")
@@ -124,10 +125,10 @@
 // let type = input.getAttribute("type")
 // console.log(type) 
 
-// ..................................................................
 // Set the "placeholder" attribute of the input element with the ID "name" to "Enter your full name". (setAttribute())
-// const elem1=document.getElementById('name').setAttribute("placeholder","Enter your name")
-// console.log(elem1)
+const elem1=document.getElementById('name')
+elem1.setAttribute("placeholder","Enter your name")
+console.log(elem1)
 
 //Q29.Does the input element with the ID "name" have the "placeholder" attribute? Print true or false. (hasAttribute())
 // const elem2=document.getElementById('name').hasAttribute('placeholder')
@@ -224,7 +225,6 @@
 // nameInput.value = "Jane Smith";
 // console.log(nameInput.value)
 
-//...............................................................................................
 
 // Add a new <li> element to the <ul> element with class "list" containing the text "Item 4".
 
@@ -233,7 +233,6 @@
 // var listElement = document.querySelector(".list");
 // listElement.appendChild(newItem);
 
-// ............................................................................................
 
 // Change the text content of the <p> element within the <div> with class "content" to "Updated paragraph text".
 
@@ -270,7 +269,7 @@
 // elem2.appendChild(elem)
 // console.log(elem2)
 
-// //52........................ Remove the first <li> element from the <ul> with class "list".
+// //52. Remove the first <li> element from the <ul> with class "list".
 
 // let em = document.querySelector("ul")
 // em.removeChild(document.querySelectorAll('li')[0])
@@ -289,9 +288,9 @@
 // elem.type="email"
 // console.log(elem)
 
-//............................ Replace the text content of the <li> element with "Item 2" to "Updated Item 2".
+// Replace the text content of the <li> element with "Item 2" to "Updated Item 2".
 
-// let elem = document.getElementsByTagName('li')[0];
+// let elem = document.getElementsByTagName('li')[1];
 // let elem2 = elem.replaceChildren("Updated Item 2");
 // console.log(elem2)
 
@@ -318,9 +317,9 @@
 // let elem = document.querySelector(".content")
 // elem.getElementsByTagName('p')[0].style.fontSize="79px"
 
-///..................................... Remove the <ul> element with class "list" from the DOM.
+// Remove the <ul> element with class "list" from the DOM.
 
-// let elem = document.querySelector(".list")[0]
+// let elem = document.querySelector(".list")
 // elem.remove();
 // console.log(elem)
 
@@ -334,8 +333,8 @@
 // 62. Append a new **`<p>`** element with the text "New paragraph" to the **`<div>`** with class "inner-box".
 
 
-let elem=document.getElementsByClassName('inner-box')[0]
-let newP=document.createElement('p')
-newP.textContent="New paragraph"
-elem.appendChild(newP)
-console.log(newP.innerHTML)
+// let elem=document.getElementsByClassName('inner-box')[0]
+// let newP=document.createElement('p')
+// newP.textContent="New paragraph"
+// elem.appendChild(newP)
+// console.log(newP.innerHTML)
