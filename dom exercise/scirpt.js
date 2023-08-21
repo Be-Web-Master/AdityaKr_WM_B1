@@ -126,9 +126,9 @@
 // console.log(type) 
 
 // Set the "placeholder" attribute of the input element with the ID "name" to "Enter your full name". (setAttribute())
-const elem1=document.getElementById('name')
-elem1.setAttribute("placeholder","Enter your name")
-console.log(elem1)
+// const elem1=document.getElementById('name')
+// elem1.setAttribute("placeholder","Enter your name")
+// console.log(elem1)
 
 //Q29.Does the input element with the ID "name" have the "placeholder" attribute? Print true or false. (hasAttribute())
 // const elem2=document.getElementById('name').hasAttribute('placeholder')
@@ -164,7 +164,7 @@ console.log(elem1)
 // 35 Prepend the created <div> element to the element with the class "content". Print the updated element. (prepend)
 
 // let elem = document.createElement("div")
-// elem.innerHTML=("new content")
+// elem.innerHTML=("updated element")
 // let conelem = document.querySelector(".content")
 // conelem.prepend(elem)
 // console.log(elem)
@@ -239,7 +239,7 @@ console.log(elem1)
 // let elem = document.querySelector(".content");
 // let elem2 = elem.querySelector("p")
 // elem2.textContent="Updated paragraph text"
-// console.log(elem.innerHTML)
+// console.log(elem2)
 
 // Change the background color of the <div> element with ID "container" to blue.
 
@@ -325,10 +325,10 @@ console.log(elem1)
 
 // // Create a new <div> element, give it a class of "new-div", and append it to the body.
 
-// let elem = document.createElement("div");
-// elem.classList.add("newdiv")
-// document.body.appendChild(elem)
-// console.log(elem)
+let elem = document.createElement("div");
+elem.className=("newdiv")
+document.body.appendChild(elem)
+console.log(elem)
 
 // 62. Append a new **`<p>`** element with the text "New paragraph" to the **`<div>`** with class "inner-box".
 
