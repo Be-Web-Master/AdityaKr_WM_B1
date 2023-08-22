@@ -90,5 +90,20 @@
 //10. Create a div of full 100vh and 100vw width and when user right click on div
 //  then changes background color to a random color on each click.
 
-let div = document.querySelector("#div")
-div.addEventListener
+// let div1 = document.querySelector("#div")
+// div1.addEventListener("click",()=>{
+//     const randomColor = Math.floor(Math.random()*16777215).toString(16);
+//     div1.style.backgroundColor= "#"+randomColor
+// })
+
+//11 Create a button and when user click on button then it show a modal with user's name, age, gender and email with a "Close" text on the top right side and hide modal click of this text.
+
+let btn = document.querySelector("#btn")
+let model = document.querySelector("#model")
+let close = document.querySelector("#close")
+btn.addEventListener("click" , () =>{
+    model.style.display="initial"
+})
+close.addEventListener("click",()=>{
+    model.style.display ="none";
+})

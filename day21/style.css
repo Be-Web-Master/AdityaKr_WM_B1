@@ -1,0 +1,30 @@
+/* @font-face {
+    font-family: gilroy;
+    src: url(./public/fonts/Gilroy-Regular.ttf)format("truetype");
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#model{
+    margin-top: 5%;
+    width: 345px;
+    height: 345px;
+    border: 5px solid black;
+    display: flex;
+    display:none;
+    align-items: center;
+    justify-content: center;
+}
