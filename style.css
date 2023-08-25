@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table,th,td{
+    border: 1px solid  ;
+}
+th,td{
+    padding: 22px;
+}
+tr{
+    border: 1px solid  ;
+    padding: 22px;
+}
+button{
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 8px 12px;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
