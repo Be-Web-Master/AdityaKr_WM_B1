@@ -1,25 +1,66 @@
-const form = document.getElementById("form");
-const btn = document.getElementById("btn");
-const num = document.getElementById("number");
-const error = document.getElementById("errormsg");
-const card = document.getElementById("card");
-const id = document.getElementById("userId");
-const title = document.getElementById("title")
+const idInput = document.getElementById("idInput");
+const todoList = document.getElementById("todoList");
+const submitBtn = document.getElementById('submitBtn');
+const API_URL = (idInputVal) => `https://jsonplaceholder.typicode.com/todos/${idInputVal}`;
+const todoLiData = []
 
-const submitHandle = (event) =>{
-    event.preventDefault();
-    if(num.value >= 1 && num.value<=199){
-        console.log(num.value);
-    fetch(`https://jsonplaceholder.typicode.com/todos/${num.value}`)
-    .then((response)=> response.json())
-    .then((data)=>{
-        id.innerText=data.id
-        title.innerText=data.title
+const clearTodolist = () => {
+    todoLiData.innerHtml='';
+}
+const updateTodoList=()=>{
+    clearTodolist();
+    for (const key of todoLiData) {
+        addLIElement(key)
     }
-)
-.catch((error)=>console.log(error));
-    }
-    else{
-        alert("number 1 to 99 dal bhai")
-    }
+}
+
+const addLIElement = (title) => {
+    todoLiData.push(title)
+    const liTagElement = document.createElement('li');
+    liTagElement.innerText=title;
+    todoList.append(liTagElement);
+}
+
+const getApiData = async (URL) => {
+    const response = await fetch(URL);
+    const data = await response.json();
+    return data
+}
+
+const handlerAddTaskSubmit = async (event) => {
+        event.preventDefault();
+        const idInputVal = idInput.value
+        if(idInputVal === ''|| idInputVal < 0 || idInputVal > 200){
+            alert("enter a valid input")
+            return
+        }
+        submitBtn.innerText='Adding'
+        const todoData = await getApiData(API_URL(idInputVal))
+
+        if(!todoData.title){
+            alert("Failed to Get Data");
+            submitBtn.innerText='Add'
+            return
+        }
+        addLIElement(todoData.title);
+        idInput.value='';
+        console.log(todoLiData);
+        submitBtn.innerText='Add'
+
 };
+
+const handlerSearchInput = (event) => {
+   const value = event.target.value;
+
+   console.log({value});
+   let result = todoLiData.filter((val) => val.includes(value))
+
+   console.log({result});
+   clearTodolist();
+   if(result.length > 0){
+    result.map((li)=>{
+        addLIElement(li)
+        console.log({li});
+    })
+   }
+}
