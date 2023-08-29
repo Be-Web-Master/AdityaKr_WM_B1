@@ -7,17 +7,41 @@
   <title></title>
 </head>
 <body>
+    <nav>
+        <h2>Task Maintainer</h2>
+         <div id="button">
+            <button id="addRow">Add row</button>
+            <button id="addColumn" >Add column</button>
+            <button id="search">Search & Sorting</button>
+            <button onclick="clearLocalStorage()" >Clear</button>
+         </div>
+    </nav>
+    <div id="Searching-sorting-function">
+        <span id="close">❌</span>
+        <form id="sort-from" action="">
+            <h2>Sorting:</h2>
+            <input name="sort" value="Acending" id="asc" type="radio">
+            <label for="asc">Acending</label>
+            <input name="sort" value="Decending" id="dec" type="radio">
+            <label for="dec">Decending</label>
+            <select class="column-dropdown"name="columnDropdown" ></select>
+            <button id="sort-btn" type="submit">Sort</button>
+        </form>
+        <form id="searching-from"action="">
+            <h2>Searching:</h2>
+            <select class="column-dropdown"name="columnDropdown" ></select>
+            <input name="sort" value="Decending" id="dec" type="search">
+            <button id="sort-btn" type="submit">Search</button>
+        </form>
+    </div>
      <div id="container">
-        <table border="1">
+        <table>
             <thead id="thead">
             </thead>
              <tbody id="tbody" >
             </tbody>
         </table>
-        <button id="addRow">Add row</button>
      </div>
-     <button id="addColumn" >Add column</button>
-     <button onclick="clearLocalStorage()" >Clear</button>
     <script src="script.js"></script>
 </body>
 </html>
