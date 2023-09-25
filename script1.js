@@ -4,6 +4,6 @@ function capitalize(){
   const elem = arr[0].toUpperCase();
   arr.shift()
   arr.unshift(elem)
-  console.log( arr.join(str));
+  return arr.join('')
 }
-capitalize(str)
+console.log(capitalize(str));
