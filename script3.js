@@ -3,8 +3,7 @@
 // output - 4
 // function getSqrt(num) - this function will return square root of a number
 
-const num = 2
 function getSqrt(num){
-    return (num *(0.5))
+    return (num ** (0.5))
 }
-console.log(getSqrt(num));
+console.log(getSqrt(16));
