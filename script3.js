@@ -1,7 +1,7 @@
 function rev(arr){
-   let barr=[]
-   for(let i = arr.lenght-1; i <= 0; i--){
-    barr.push(arr[i])
+   let barr=[];
+   for(let i = arr.length-1; i >= 0; i--){
+     barr.push(arr[i])
    }
    return barr
 }

@@ -1,13 +1,13 @@
-function palindrome(){
-  let arr = [...str]
-  for(let i = 0; i < arr.length; i++){
-    for(let j = arr.length - 1; j <= 0 ; j--){
-        if (arr[i]==arr[j]){
-            return true
-        }
-    }
+function palindrome(str2){
+  let rev =""
+  for(let i = str2.length-1; i >= 0 ; i--){
+     rev+=str2[i]
   }
-  return false
+  if(str == rev){
+    return true
+  }else{
+    return false
+  }
 }
-let str = 'acbca';
-console.log(palindrome(str));
+let str2 = 'acbca';
+console.log(palindrome(str2));
