@@ -13,3 +13,24 @@
 // 22: [{ name:"c", age:22 }, { name:"e", age:22 },
 // { name:"f", age:22 }]
 // }
+
+const peoples = [
+    { name:"a", age:21 },
+    { name:"b", age:20 },
+    { name:"c", age:22 },
+    { name:"d", age:21 },
+    { name:"e", age:22 },
+    { name:"f", age:22 }
+]
+function grouping(peoples){
+    let result = {};
+    for (let i= 0; i < peoples.length; i++) {
+         if(result[peoples[i].age]){
+            result[peoples[i].age] = [...result[peoples[i].age],peoples[i]]
+         }else{
+            result[peoples[i].age] = [peoples[i]]
+         }
+    }
+    return result
+}
+console.log(grouping(peoples));
