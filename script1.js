@@ -8,14 +8,13 @@ const arr = [1,2,3,4,5,6];
 const swapLeftBy = 2;
 function getLeftSwappedArrayByIndex(arr, swapLeftBy){
    let temp = [ ];
-   for(let i = 0; i < arr.lenght; i++){
-     if(arr[i] === swapLeftBy){
-        temp.push(arr[i])
-     }
-    else if(arr[i] !== swapLeftBy){
-        temp.Unshift(arr[i])
-    }
-  }
-   return temp
+   for (let i = 0; i < arr.length; i++) {   
+      if(arr[i]===swapLeftBy){
+         temp.push(arr[i])
+      }
+      else if(arr[i] !== swapLeftBy){
+         temp.unshift(arr[i])
+      }
+   }return temp
 }
 console.log(getLeftSwappedArrayByIndex(arr, swapLeftBy));

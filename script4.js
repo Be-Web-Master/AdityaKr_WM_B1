@@ -14,6 +14,16 @@
 
 const string = "WebMaster wEBmasTer Best"
 function getFrequency(string){
-    
+    let freqObj={};
+   for (const str of string){
+    const st = str.toLowerCase()
+     if(freqObj[st]){
+        freqObj[st]++
+     }
+     else{
+        freqObj[st]=1
+     }
+   }
+   return freqObj
 }
-getFrequency(string)
+console.log(getFrequency(string));
