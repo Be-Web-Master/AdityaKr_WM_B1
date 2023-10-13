@@ -23,6 +23,6 @@ for (let i = 0; i < strs.length; i++) {
         tempArr.push(strs[i].charAt(2))
     }
 }
-return tempArr
+ return tempArr
 }
 console.log(prefix(strs));

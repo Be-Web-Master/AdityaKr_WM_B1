@@ -20,13 +20,16 @@
 
 // Input: nums = [3,3], target = 6
 // Output: [0,1]
-let nums = [2,7,11,15], target = 18
+let nums = [2,7,11,15], target = 23
 function sumOfIndex(arr,target){
    const result =[];
    for (let i = 0; i < arr.length; i++) {
      for (let j = i; j < arr.length; j++){
         if(arr[i]+arr[j]===target){
             result.push(i,j)
+        }
+        else{
+            return (`none of elements of sum which mathch target:${target}`)
         }
      }
    }
