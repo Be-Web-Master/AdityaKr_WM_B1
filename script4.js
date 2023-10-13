@@ -28,9 +28,6 @@ function sumOfIndex(arr,target){
         if(arr[i]+arr[j]===target){
             result.push(i,j)
         }
-        else{
-            return (`none of elements of sum which mathch target:${target}`)
-        }
      }
    }
    return result
